@@ -6,8 +6,8 @@ const convertojson = require('csvtojson');
 const path = require('path');
 const name = process.argv[2];
 
-convertir = ()=> {
-    var json = convertojson()
+const convertir = ()=> {
+    let json = convertojson()
         .fromFile(name)
         .then((jsonObj) =>{
             newName = name.replace(".csv", ".json");
